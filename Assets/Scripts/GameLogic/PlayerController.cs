@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
 
     private void Movement()
     {
-        rb.velocity = new Vector3(xInput * moveSpeed, rb.velocity.y, yInput * moveSpeed);
+        //rb.velocity = new Vector3(xInput * moveSpeed, rb.velocity.y, yInput * moveSpeed);
     }
 
     private void Jump()
@@ -43,5 +43,16 @@ public class PlayerController : MonoBehaviour
         {
             Jump();
         }
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            rb.velocity = new Vector3(-jumpSpeed, 0, 0);
+        }
+    }
+
+    public void Reset()
+    {
+        rb.velocity = Vector3.zero;
+        transform.position = new Vector3(3, 0.5f, -3);
     }
 }
