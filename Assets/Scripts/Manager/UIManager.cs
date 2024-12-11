@@ -8,19 +8,6 @@ using UnityEngine;
 
 namespace ns
 {
-	public class UIPanel : MonoBehaviour
-    {
-        public GameObject go;
-		virtual public void OnShow()
-        {
-
-        }
-
-		virtual public void OnHide()
-        {
-
-        }
-	}
 	public class UIManager : SingletonBase<UIManager>
 	{
         Transform uiroot;
@@ -29,7 +16,8 @@ namespace ns
         override protected void Awake()
         {
             base.Awake();
-            uiroot = GameObject.Find("Canvas/UIRoot").GetComponent<Transform>();
+            uiroot = GameObject.Find("UIRoot").GetComponent<Transform>();
+            DontDestroyOnLoad(uiroot);
         }
 
         public void OpenUI(string name)

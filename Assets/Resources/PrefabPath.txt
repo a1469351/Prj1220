@@ -1,0 +1,5 @@
+Prefab/Mechanical/Ball=Ball
+Prefab/Mechanical/StartPoint=StartPoint
+Prefab/Mechanical/Wal=Wal
+Prefab/UI/BackTitle=BackTitle
+Prefab/UI/ClearPopUp=ClearPopUp

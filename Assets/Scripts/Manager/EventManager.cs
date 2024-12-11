@@ -15,11 +15,17 @@ namespace ns
 		public enum EventEnum
         {
 			Test1,
-			Test2,
+			ResetLevel,
 			ScoreChange
 		}
 
-		public void RegisterEvent(EventEnum e, Action ac)
+        protected override void Awake()
+        {
+            base.Awake();
+			DontDestroyOnLoad(gameObject);
+        }
+
+        public void RegisterEvent(EventEnum e, Action ac)
         {
 			if (dic.ContainsKey(e))
             {

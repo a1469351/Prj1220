@@ -4,5 +4,21 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/StartScene.scene
+    guid: 2e2259ad1b295004ea413d8faa78387a
+  - enabled: 1
+    path: Assets/Scenes/Level1.scene
+    guid: 0ea2aa77097e48b4b8d69a4411ccbf13
+  - enabled: 1
+    path: Assets/Scenes/Level2.scene
+    guid: e508a50c486bb914181a0fa1cf9008dd
   m_configObjects: {}
+  m_SlimFeaturesWeixinMiniGame:
+    AllocateOverhead: 1
+    DecompressASTC: 0
+    DecompressDXT: 1
+    DecompressETC: 1
+    FreeTypeSfntPng: 1
+    LightProbe: 2
